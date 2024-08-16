@@ -6,7 +6,8 @@ export default function Counter() {
 
   useEffect(() => {
     console.log('Rendering Sonrası')
-  })
+    document.title=`${count}`
+  },[count])
 
   function updateCount() {
     setCount((c) => c + 1)
